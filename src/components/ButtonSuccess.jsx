@@ -1,5 +1,5 @@
-export const ButtonSuccess = () => {
+export const ButtonSuccess = ({ onClick }) => {
   return (
-    <button className="button-add">Agrega un proyecto</button>
+    <button className="button-add" onClick={onClick}>Agrega un proyecto</button>
   )
 }
