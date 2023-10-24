@@ -101,6 +101,54 @@ a {
     cursor: pointer;
 }
 
+/* Proyecto */
+.info-container {
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.info-container .nav-link {
+    text-decoration: none;
+    color: #264163;
+}
+
+.tab-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.nombre-proyecto {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.descripcion-proyecto {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.project-title1 {
+    color: #1e2125;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.project-title2 {
+    color: red;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.project-desc {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 /* Integrantes */
 .integrantes-container {
     display: flex;
@@ -109,8 +157,15 @@ a {
     margin: 5rem auto;
 }
 
+.integrante-card {
+    width: 500px;
+    margin: 2rem 0;
+}
+
 .integrante-card * {
-    margin: 0.3rem 0;
+    margin: 0.2rem auto;
+    text-align: center;
+    display: block;
 }
 
 .integrante-card img {
