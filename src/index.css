@@ -91,13 +91,50 @@ a {
     display: block;
     margin: 1rem auto;
     border: none;
-    padding: 0.7rem 1.4rem;
+    width: 70%;
+    padding: 10px 0;
+    text-align: center;
 }
 
 .btn-filled-blue:hover {
     background-color: #0056c0;
     cursor: pointer;
 }
+
+/* Integrantes */
+.integrantes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5rem auto;
+}
+
+.integrante-card * {
+    margin: 0.3rem 0;
+}
+
+.integrante-card img {
+    border-radius: 50%;
+    width: 134px;
+    height: 134px;
+    object-fit: cover;
+}
+
+.integrante-info {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+}
+
+.integrante-nombres {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.integrante-pais {
+    color: #767676;
+}
+
 
 /* Login & Register */
 .login-title {

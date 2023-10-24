@@ -10,16 +10,16 @@ export const Footer = () => {
                             <h1 className="title-footer">Página</h1>
                         </li>
                         <li>
-                            <a href='index.html' className="foot-link">Inicio</a>
+                            <NavLink to='/' className="foot-link">Inicio</NavLink>
                         </li>
                         <li>
-                            <a href='/login.html' className="foot-link">Inicia Sesión</a>
+                            <NavLink to='/login' className="foot-link">Inicia Sesión</NavLink>
                         </li>
                         <li>
-                            <a href='/register.html' className="foot-link">Regístrate</a>
+                            <NavLink to='/register' className="foot-link">Regístrate</NavLink>
                         </li>
                         <li>
-                            <a href='/perfil.html' className="foot-link">Tu perfil</a>
+                            <NavLink to='/info' className="foot-link">Información</NavLink>
                         </li>
                     </ul>
                     <ul className="list-footer">
@@ -41,7 +41,7 @@ export const Footer = () => {
                             <a href='https://www.linkedin.com/in/dylan-alberto-chilet-astete/' className="foot-link">Dylan Astete</a>
                         </li>
                         <li>
-                            <a href='www.linkedin.com/in/dannycastilloo' className="foot-link">Danny Castillo</a>
+                            <a href='https://www.linkedin.com/in/dannycastilloo' className="foot-link">Danny Castillo</a>
                         </li>
                     </ul>
                     <ul className="list-footer">

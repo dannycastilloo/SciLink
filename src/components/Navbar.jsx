@@ -22,17 +22,7 @@ export const Navbar = () => {
                         </form>
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Idioma
-                                </a>
-                                <ul className="dropdown-menu dropdown-menu-dark">
-                                    <li><a className="dropdown-item" href="#">Inglés</a></li>
-                                    <li><a className="dropdown-item" href="#">Español</a></li>
-                                </ul>
+                                <NavLink to='/' className="nav-link" aria-current="page" href="index.html">Home</NavLink>
                             </li>
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -40,8 +30,8 @@ export const Navbar = () => {
                                     Usuario
                                 </a>
                                 <ul className="dropdown-menu dropdown-menu-dark">
-                                    <li><a className="dropdown-item" href="login.html">Inicia sesión</a></li>
-                                    <li><a className="dropdown-item" href="register.html">Regístrate</a></li>
+                                    <li><NavLink to='/login'  className="dropdown-item" href="login.html">Inicia sesión</NavLink></li>
+                                    <li><NavLink to='/register' className="dropdown-item" href="register.html">Regístrate</NavLink></li>
                                 </ul>
                             </li>
                         </ul>
