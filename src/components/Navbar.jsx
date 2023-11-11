@@ -3,41 +3,24 @@ import { NavLink } from "react-router-dom"
 export const Navbar = () => {
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-dark">
-                <div className="container">
-                    <NavLink to="/" className="navbar-brand" href="index.html">
+            <nav className="navbar navbar-expand-lg fixed-top py-3" id="mainNav">
+                <div className="container px-4 px-lg-5">
+                    <a className="navbar-brand" href="index.html">
                         <h1 className="logo">Sci<span>Link.</span></h1>
-                    </NavLink>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" data-bs-theme="bg-light" id="navbarSupportedContent">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item"></li>
-                        </ul>
-                        <form className="d-flex search-bar" role="search">
-                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        </form>
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                <NavLink to='/' className="nav-link" aria-current="page" href="index.html">Home</NavLink>
-                            </li>
-                            <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Usuario
-                                </a>
-                                <ul className="dropdown-menu dropdown-menu-dark">
-                                    <li><NavLink to='/login'  className="dropdown-item" href="login.html">Inicia sesión</NavLink></li>
-                                    <li><NavLink to='/register' className="dropdown-item" href="register.html">Regístrate</NavLink></li>
-                                </ul>
-                            </li>
+                    </a>
+                    <button className="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                        aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
+                    <div className="collapse navbar-collapse" id="navbarResponsive">
+                        <ul className="navbar-nav ms-auto my-2 my-lg-0">
+                            <li className="nav-item"><a className="nav-link" href="#about">About</a></li>
+                            <li className="nav-item"><a className="nav-link" href="#equipo">Team</a></li>
+                            <li className="nav-item"><a className="nav-link" href="https://scilink.space/invite">Marketplace</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
+
         </>
     )
 }
