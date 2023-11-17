@@ -3,25 +3,39 @@ import { NavLink } from "react-router-dom"
 export const RegisterForm = () => {
     return (
         <>
-            <form className="login-form" action="">
-                <h1 className="login-title">Register</h1>
+            <div class="login-container">
+                <form class="login-form" action="">
+                    <h1 class="login-title">Crea una nueva cuenta</h1>
 
-                <div className="form-input">
-                    <i className="fas fa-solid fa-user"></i>
-                    <label>Create a username</label>
-                </div>
-                <input type="text" id="username" />
+                    <div class="form-input">
+                        <i class="fas fa-solid fa-user"></i>
+                        <label>Nombres</label>
+                    </div>
+                    <input type="text" id="username" />
 
-                <div className="form-input">
-                    <i className="fas fa-solid fa-lock"></i>
-                    <label>Create a password</label>
-                </div>
-                <input type="password" id="password" />
+                    <div class="form-input">
+                        <i class="fas fa-solid fa-phone"></i>
+                        <label>Celular</label>
+                    </div>
+                    <input type="phone" id="phone" />
 
-                <NavLink to='/login' className="link">Already have an account?</NavLink>
+                    <div class="form-input">
+                        <i class="fas fa-solid fa-inbox"></i>
+                        <label>Correo electrónico</label>
+                    </div>
+                    <input type="email" id="email" />
 
-                <button className="login-action" id="button">Create an account</button>
-            </form>
+                    <div class="form-input">
+                        <i class="fas fa-solid fa-lock"></i>
+                        <label>Contraseña</label>
+                    </div>
+                    <input type="password" id="password" placeholder="●●●●●●●●●" />
+
+                    <a href='login.html' class="link">¿Ya tienes una cuenta?</a>
+
+                    <button class="login-action" id="button">Regístrate</button>
+                </form>
+            </div>
         </>
     )
 }
